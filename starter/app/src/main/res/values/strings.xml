@@ -18,4 +18,9 @@
     <string name="load_app_radio_title">Load App - Current repository by Udacity</string>
     <string name="retrofit_radio_title">Retrofit - Type-safe HTTP client for Android and Java by Squre, Inc.</string>
     <string name="download">Download</string>
+
+    <string name="button_normal_text">Download</string>
+    <string name="button_downloading_text">Downloading ...</string>
+    <string name="fileName">File Name:</string>
+    <string name="status">Status:</string>
 </resources>
