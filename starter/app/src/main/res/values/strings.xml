@@ -14,4 +14,8 @@
 
     <string name="file_name">file_name</string>
     <string name="status_">status</string>
+    <string name="glide_radio_title">Glide - Image Loading Library by BumpTech</string>
+    <string name="load_app_radio_title">Load App - Current repository by Udacity</string>
+    <string name="retrofit_radio_title">Retrofit - Type-safe HTTP client for Android and Java by Squre, Inc.</string>
+    <string name="download">Download</string>
 </resources>

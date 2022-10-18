@@ -10,6 +10,7 @@ import android.graphics.Color
 import android.os.Build
 import androidx.core.app.NotificationCompat
 import androidx.core.content.ContextCompat
+import com.udacity.ui.DetailActivity
 
 class NotificationBuilder {
     companion object{
