@@ -90,10 +90,10 @@ class MainActivity : AppCompatActivity() {
                 val status = cursor.getInt(cursor.getColumnIndex(DownloadManager.COLUMN_STATUS))
                 if (status == DownloadManager.STATUS_FAILED) {
                     //create notification with failed status
-                    NotificationBuilder.Companion.send(fileName, "failed", applicationContext)
+                    NotificationBuilder.send(fileName, "failed", applicationContext)
                 } else {
                     //create notification with success status
-                    NotificationBuilder.Companion.send(fileName, "success", applicationContext)
+                    NotificationBuilder.send(fileName, "success", applicationContext)
                 }
             }
         }
@@ -118,5 +118,4 @@ class MainActivity : AppCompatActivity() {
             "https://github.com/udacity/nd940-c3-advanced-android-programming-project-starter/archive/master.zip"
         private const val CHANNEL_ID = "channelId"
     }
-
 }
