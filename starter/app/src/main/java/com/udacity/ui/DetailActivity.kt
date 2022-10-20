@@ -1,11 +1,11 @@
 package com.udacity.ui
 
+import android.content.Intent
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import androidx.databinding.DataBindingUtil
 import com.udacity.R
 import com.udacity.databinding.ActivityDetailBinding
-import kotlinx.android.synthetic.main.activity_detail.*
 
 class DetailActivity : AppCompatActivity() {
 
@@ -15,16 +15,19 @@ class DetailActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        binding= DataBindingUtil.setContentView(this,R.layout.activity_detail)
+        binding = DataBindingUtil.setContentView(this, R.layout.activity_detail)
 
-        setSupportActionBar(toolbar)
+        setSupportActionBar(binding.toolbar)
+        supportActionBar?.apply {
+            setDisplayHomeAsUpEnabled(true)
+            setDisplayShowHomeEnabled(true)
+        }
 
-        intent= intent
-        fileName= intent.getStringExtra(applicationContext.getString(R.string.file_name))
-        status= intent.getStringExtra(applicationContext.getString(R.string.status_))
+        intent = intent
+        fileName = intent.getStringExtra(applicationContext.getString(R.string.file_name))
+        status = intent.getStringExtra(applicationContext.getString(R.string.status_))
 
         binding.contentDetailLayout.tvFileNameValue.setText(fileName)
         binding.contentDetailLayout.tvStatusValue.setText(status)
     }
-
 }
