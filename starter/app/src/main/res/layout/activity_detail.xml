@@ -29,6 +29,7 @@
         </com.google.android.material.appbar.AppBarLayout>
 
         <include
+            android:padding="10dp"
             android:id="@+id/content_detail_layout"
             layout="@layout/content_detail" />
 
